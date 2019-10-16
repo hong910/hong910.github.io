@@ -4,8 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, hexo">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="Hexo安装教程, hexo">
+    <meta name="description" content="安装hexo基础框架npm install hexo-cli -g
+更新内容我是用windows系统，打开cmd然后进入到你的博客文件目录，输入以下命令
+hexo clean
+hexo g
+hexo d网易云音乐外链https://musi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | hexo</title>
+    <title>Hexo安装教程 | hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -300,13 +304,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        Hexo安装教程
                     </div>
                 </div>
             </div>
@@ -416,9 +420,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Hexo-技术-Git/">
+                                <span class="chip bg-color">-Hexo -技术 -Git</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -429,7 +437,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-11
+                    2019-10-16
                 </div>
 
                 
@@ -445,20 +453,41 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+                <h2 id="安装hexo基础框架"><a href="#安装hexo基础框架" class="headerlink" title="安装hexo基础框架"></a>安装hexo基础框架</h2><pre class=" language-hexo"><code class="language-hexo">npm install hexo-cli -g</code></pre>
+<h2 id="更新内容"><a href="#更新内容" class="headerlink" title="更新内容"></a>更新内容</h2><p>我是用windows系统，打开cmd然后进入到你的博客文件目录，输入以下命令</p>
+<pre><code>hexo clean
+hexo g
+hexo d</code></pre><h2 id="网易云音乐外链"><a href="#网易云音乐外链" class="headerlink" title="网易云音乐外链"></a>网易云音乐外链</h2><pre><code>https://music.163.com/song/media/outer/url?id=484365611.mp3</code></pre><h2 id="清空git缓存"><a href="#清空git缓存" class="headerlink" title="清空git缓存"></a>清空git缓存</h2><pre><code>git rm -r --cached .
+git gc</code></pre><h2 id="更换仓库："><a href="#更换仓库：" class="headerlink" title="更换仓库："></a>更换仓库：</h2><pre><code>git remote -v
+git remote set-url origin 新仓库
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+git remote set-url origin https://github.com/xiu0928/love.git</code></pre><h2 id="查看当前用户名和邮箱"><a href="#查看当前用户名和邮箱" class="headerlink" title="查看当前用户名和邮箱"></a>查看当前用户名和邮箱</h2><pre><code>git config user.name
+git config user.email</code></pre><h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><pre><code>git config --global user.name &quot;xiu0928&quot;
+git config --global user.email &quot;2011447576@qq.com&quot;</code></pre><h2 id="上传项目"><a href="#上传项目" class="headerlink" title="上传项目"></a>上传项目</h2><pre><code>git init
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+git add . 
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+git commit -m &quot;first commit&quot;
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+git remote add origin https://自己的仓库url地址（上面有说到） 将本地的仓库关联到github上，
 
+git push -u origin master</code></pre><h2 id="更新到GitHub上"><a href="#更新到GitHub上" class="headerlink" title="更新到GitHub上"></a>更新到GitHub上</h2><pre><code>hexo clean
+
+hexo generate
+
+hexo deploy</code></pre><h2 id="更新到GitHub上-1"><a href="#更新到GitHub上-1" class="headerlink" title="更新到GitHub上"></a>更新到GitHub上</h2><pre><code>git clone https://github.com/xiu0928/xiu0928.github.io .deploy/xiu0928.github.io
+
+hexo generate   //生成静态文件
+
+cp -R public/* .deploy/xiu0928.github.io  //复制文件
+
+cd .deploy/xiu0928.github.io //切换目录
+
+git add .  //将需要提交的代码添加到暂存区
+
+git commit -m &quot;update&quot; //将暂存区内容提交给本地版本库
+
+git push //推送给远程服务器</code></pre>
             </div>
             <hr/>
 
@@ -618,8 +647,8 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2019/10/11/hello-world/">
-                    《Hello World》
+            <a  href="/2019/10/16/Hexo/">
+                    《Hexo安装教程》
             </a> 由
             <a href="http://yoursite.com">
                 Hong yue
@@ -660,9 +689,60 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/10/16/Hexo/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Hexo安装教程">
+                        
+                        <span class="card-title">Hexo安装教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            安装hexo基础框架npm install hexo-cli -g
+更新内容我是用windows系统，打开cmd然后进入到你的博客文件目录，输入以下命令
+hexo clean
+hexo g
+hexo d网易云音乐外链https://musi
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Hong yue
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo-技术-Git/">
+                        <span class="chip bg-color">-Hexo -技术 -Git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/10/12/javaoop-知识点总结/">
                     <div class="card-image">
@@ -681,45 +761,8 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-12
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Hong yue
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/10/11/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-12
                             </span>
                         <span class="publish-author">
                             
@@ -729,7 +772,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
