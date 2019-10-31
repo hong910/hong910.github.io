@@ -4,10 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="mysql语句总结, O₂">
-    <meta name="description" content="## mysql语句大全一、基础1、创建数据库：CREATE DATABASE 库名2、删除数据库：drop database 库名3、备份sql server--- 创建 备份数据的 device
-USE master
-EXEC sp_a">
+    <meta name="keywords" content="高质量图片网站, O₂">
+    <meta name="description" content=" 高质量图片网站 [网站一](https://magdeleine.co/)[网站二](https://www.lifeofpix.com)[网站三](https://unsplash.com)">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@ EXEC sp_a">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>mysql语句总结 | O₂</title>
+    <title>高质量图片网站 | O₂</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -302,13 +300,13 @@ EXEC sp_a">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        mysql语句总结
+                        高质量图片网站
                     </div>
                 </div>
             </div>
@@ -420,8 +418,8 @@ EXEC sp_a">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/mysql-概念-总结/">
-                                <span class="chip bg-color">-mysql -概念 -总结</span>
+                            <a href="/tags/网站-常用/">
+                                <span class="chip bg-color">-网站 -常用</span>
                             </a>
                         
                     </div>
@@ -451,56 +449,7 @@ EXEC sp_a">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre><code>## mysql语句大全</code></pre><h3 id="一、基础"><a href="#一、基础" class="headerlink" title="一、基础"></a>一、基础</h3><h4 id="1、创建数据库："><a href="#1、创建数据库：" class="headerlink" title="1、创建数据库："></a>1、创建数据库：</h4><pre><code>CREATE DATABASE 库名</code></pre><h4 id="2、删除数据库："><a href="#2、删除数据库：" class="headerlink" title="2、删除数据库："></a>2、删除数据库：</h4><pre><code>drop database 库名</code></pre><h4 id="3、备份sql-server"><a href="#3、备份sql-server" class="headerlink" title="3、备份sql server"></a>3、备份sql server</h4><pre><code>--- 创建 备份数据的 device
-USE master
-EXEC sp_addumpdevice &#39;disk&#39;, &#39;testBack&#39;, &#39;c:\mssql7backup\MyNwind_1.dat&#39;
---- 开始 备份
-BACKUP DATABASE pubs TO testBack</code></pre><h4 id="4、创建新表"><a href="#4、创建新表" class="headerlink" title="4、创建新表"></a>4、创建新表</h4><pre><code>create table tabname(col1 type1 [not null] [primary key],col2 type2 [not null],..)
-根据已有的表创建新表：
-A：create table tab_new like tab_old (使用旧表创建新表)
-B：create table tab_new as select col1,col2… from tab_old definition only</code></pre><h4 id="5、删除新表"><a href="#5、删除新表" class="headerlink" title="5、删除新表"></a>5、删除新表</h4><pre><code>drop table tabname</code></pre><h4 id="6、增加一个列"><a href="#6、增加一个列" class="headerlink" title="6、增加一个列"></a>6、增加一个列</h4><pre><code>Alter table tabname add column col type
-注：列增加后将不能删除。DB2中列加上后数据类型也不能改变，唯一能改变的是增加varchar类型的长度。</code></pre><h4 id="7、添加主键：-Alter-table-tabname-add-primary-key-col"><a href="#7、添加主键：-Alter-table-tabname-add-primary-key-col" class="headerlink" title="7、添加主键： Alter table tabname add primary key(col)"></a>7、添加主键： Alter table tabname add primary key(col)</h4><pre><code>删除主键： Alter table tabname drop primary key(col)</code></pre><h4 id="8、创建索引：create-unique-index-idxname-on-tabname-col…"><a href="#8、创建索引：create-unique-index-idxname-on-tabname-col…" class="headerlink" title="8、创建索引：create [unique] index idxname on tabname(col….)"></a>8、创建索引：create [unique] index idxname on tabname(col….)</h4><pre><code>删除索引：drop index idxname
-注：索引是不可更改的，想更改必须删除重新建。</code></pre><h4 id="9、创建视图：create-view-viewname-as-select-statement"><a href="#9、创建视图：create-view-viewname-as-select-statement" class="headerlink" title="9、创建视图：create view viewname as select statement"></a>9、创建视图：create view viewname as select statement</h4><pre><code>删除视图：drop view viewname</code></pre><h4 id="10、几个简单的基本的sql语句"><a href="#10、几个简单的基本的sql语句" class="headerlink" title="10、几个简单的基本的sql语句"></a>10、几个简单的基本的sql语句</h4><pre><code>选择：select * from table1 where 范围
-插入：insert into table1(field1,field2) values(value1,value2)
-删除：delete from table1 where 范围
-更新：update table1 set field1=value1 where 范围
-查找：select * from table1 where field1 like ’%value1%’ ---like的语法很精妙，查资料!
-排序：select * from table1 order by field1,field2 [desc]
-总数：select count as totalcount from table1
-求和：select sum(field1) as sumvalue from table1
-平均：select avg(field1) as avgvalue from table1
-最大：select max(field1) as maxvalue from table1
-最小：select min(field1) as minvalue from table1</code></pre><h4 id="11、几个高级查询运算词"><a href="#11、几个高级查询运算词" class="headerlink" title="11、几个高级查询运算词"></a>11、几个高级查询运算词</h4><pre><code>A： UNION 运算符
-UNION 运算符通过组合其他两个结果表（例如 TABLE1 和 TABLE2）并消去表中任何重复行而派生出一个结果表。        当 ALL 随 UNION 一起使用时（即 UNION ALL），不消除重复行。两种情况下，派生表的每一行不是来自 TABLE1 就是来自 TABLE2。
-B： EXCEPT 运算符
-EXCEPT 运算符通过包括所有在 TABLE1 中但不在 TABLE2 中的行并消除所有重复行而派生出一个结果表。当 ALL 随 EXCEPT 一起使用时 (EXCEPT ALL)，不消除重复行。
-C： INTERSECT 运算符
-INTERSECT 运算符通过只包括 TABLE1 和 TABLE2 中都有的行并消除所有重复行而派生出一个结果表。当 ALL随INTERSECT 一起使用时 (INTERSECT ALL)，不消除重复行。
-注：使用运算词的几个查询结果行必须是一致的。</code></pre><h4 id="12、使用外连接"><a href="#12、使用外连接" class="headerlink" title="12、使用外连接"></a>12、使用外连接</h4><pre><code>A、left （outer） join：
-左外连接（左连接）：结果集几包括连接表的匹配行，也包括左连接表的所有行。
-SQL: select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c
-B：right （outer） join:
-右外连接(右连接)：结果集既包括连接表的匹配连接行，也包括右连接表的所有行。
-C：full/cross （outer） join：
-全外连接：不仅包括符号连接表的匹配行，还包括两个连接表中的所有记录。</code></pre><h4 id="13、分组-Group-by"><a href="#13、分组-Group-by" class="headerlink" title="13、分组:Group by:"></a>13、分组:Group by:</h4><pre><code>  一张表，一旦分组完成后，查询后只能得到组相关的信息。
- 组相关的信息：（统计信息） count,sum,max,min,avg  分组的标准)
-在SQLServer中分组时：不能以text,ntext,image类型的字段作为分组依据
- 在selecte统计函数中的字段，不能和普通的字段放在一起；</code></pre><h4 id="14、对数据库进行操作："><a href="#14、对数据库进行操作：" class="headerlink" title="14、对数据库进行操作："></a>14、对数据库进行操作：</h4><pre><code> 分离数据库： sp_detach_db; 附加数据库：sp_attach_db 后接表明，附加需要完整的路径名</code></pre><h4 id="15-如何修改数据库的名称"><a href="#15-如何修改数据库的名称" class="headerlink" title="15.如何修改数据库的名称:"></a>15.如何修改数据库的名称:</h4><pre><code>sp_renamedb &#39;old_name&#39;, &#39;new_name&#39;</code></pre><h3 id="二、提升"><a href="#二、提升" class="headerlink" title="二、提升"></a>二、提升</h3><h4 id="1、复制表-只复制结构-源表名：a-新表名：b-Access可用"><a href="#1、复制表-只复制结构-源表名：a-新表名：b-Access可用" class="headerlink" title="1、复制表(只复制结构,源表名：a 新表名：b) (Access可用)"></a>1、复制表(只复制结构,源表名：a 新表名：b) (Access可用)</h4><pre><code>法一：select * into b from a where 1&lt;&gt;1（仅用于SQlServer）
-法二：select top 0 * into b from a</code></pre><h4 id="2、拷贝表-拷贝数据-源表名：a-目标表名：b-Access可用"><a href="#2、拷贝表-拷贝数据-源表名：a-目标表名：b-Access可用" class="headerlink" title="2、拷贝表(拷贝数据,源表名：a 目标表名：b) (Access可用)"></a>2、拷贝表(拷贝数据,源表名：a 目标表名：b) (Access可用)</h4><pre><code>insert into b(a, b, c) select d,e,f from b;</code></pre><h4 id="3、跨数据库之间表的拷贝-具体数据使用绝对路径-Access可用"><a href="#3、跨数据库之间表的拷贝-具体数据使用绝对路径-Access可用" class="headerlink" title="3、跨数据库之间表的拷贝(具体数据使用绝对路径) (Access可用)"></a>3、跨数据库之间表的拷贝(具体数据使用绝对路径) (Access可用)</h4><pre><code>insert into b(a, b, c) select d,e,f from b in ‘具体数据库’ where 条件
-例子：..from b in &#39;&quot;&amp;Server.MapPath(&quot;.&quot;)&amp;&quot;\data.mdb&quot; &amp;&quot;&#39; where..</code></pre><h4 id="4、子查询-表名1：a-表名2：b"><a href="#4、子查询-表名1：a-表名2：b" class="headerlink" title="4、子查询(表名1：a 表名2：b)"></a>4、子查询(表名1：a 表名2：b)</h4><pre><code>select a,b,c from a where a IN (select d from b ) 或者: select a,b,c from a where a IN (1,2,3)</code></pre><h4 id="5、显示文章、提交人和最后回复时间"><a href="#5、显示文章、提交人和最后回复时间" class="headerlink" title="5、显示文章、提交人和最后回复时间"></a>5、显示文章、提交人和最后回复时间</h4><pre><code>select a.title,a.username,b.adddate from table a,(select max(adddate) adddate from table where table.title=a.title) b</code></pre><h4 id="6、外连接查询-表名1：a-表名2：b"><a href="#6、外连接查询-表名1：a-表名2：b" class="headerlink" title="6、外连接查询(表名1：a 表名2：b)"></a>6、外连接查询(表名1：a 表名2：b)</h4><pre><code>select a.a, a.b, a.c, b.c, b.d, b.f from a LEFT OUT JOIN b ON a.a = b.c</code></pre><h4 id="7、在线视图查询-表名1：a"><a href="#7、在线视图查询-表名1：a" class="headerlink" title="7、在线视图查询(表名1：a )"></a>7、在线视图查询(表名1：a )</h4><pre><code>select * from (SELECT a,b,c FROM a) T where t.a &gt; 1;</code></pre><h4 id="8、between的用法-between限制查询数据范围时包括了边界值-not-between不包括"><a href="#8、between的用法-between限制查询数据范围时包括了边界值-not-between不包括" class="headerlink" title="8、between的用法,between限制查询数据范围时包括了边界值,not between不包括"></a>8、between的用法,between限制查询数据范围时包括了边界值,not between不包括</h4><pre><code>select * from table1 where time between time1 and time2
-select a,b,c, from table1 where a not between 数值1 and 数值2</code></pre><h4 id="9、in-的使用方法"><a href="#9、in-的使用方法" class="headerlink" title="9、in 的使用方法"></a>9、in 的使用方法</h4><pre><code>select * from table1 where a [not] in (‘值1’,’值2’,’值4’,’值6’)</code></pre><h4 id="10、两张关联表，删除主表中已经在副表中没有的信息"><a href="#10、两张关联表，删除主表中已经在副表中没有的信息" class="headerlink" title="10、两张关联表，删除主表中已经在副表中没有的信息"></a>10、两张关联表，删除主表中已经在副表中没有的信息</h4><pre><code>delete from table1 where not exists ( select * from table2 where table1.field1=table2.field1 )</code></pre><h4 id="11、四表联查问题："><a href="#11、四表联查问题：" class="headerlink" title="11、四表联查问题："></a>11、四表联查问题：</h4><pre><code>select * from a left inner join b on a.a=b.b right inner join c on a.a=c.c inner join d on a.a=d.d where .....</code></pre><h4 id="12、日程安排提前五分钟提醒"><a href="#12、日程安排提前五分钟提醒" class="headerlink" title="12、日程安排提前五分钟提醒"></a>12、日程安排提前五分钟提醒</h4><pre><code>SQL: select * from 日程安排 where datediff(&#39;minute&#39;,f开始时间,getdate())&gt;5</code></pre><h4 id="13、一条sql-语句搞定数据库分页"><a href="#13、一条sql-语句搞定数据库分页" class="headerlink" title="13、一条sql 语句搞定数据库分页"></a>13、一条sql 语句搞定数据库分页</h4><pre><code>select top 10 b.* from (select top 20 主键字段,排序字段 from 表名 order by 排序字段 desc) a,表名 b where b.主键字段 = a.主键字段 order by a.排序字段</code></pre><p>具体实现：<br>关于数据库分页：<br>  declare @start int,@end int<br>  @sql  nvarchar(600)<br>  set @sql=’select top’+str(@end-@start+1)+’+from T where rid not in(select top’+str(@str-1)+’Rid from T where Rid&gt;-1)’<br>  exec sp_executesql @sql</p>
-<p>注意：在top后不能直接跟一个变量，所以在实际应用中只有这样的进行特殊的处理。Rid为一个标识列，如果top后还有具体的字段，这样做是非常有好处的。因为这样可以避免 top的字段如果是逻辑索引的，查询的结果后实际表中的不一致（逻辑索引中的数据有可能和数据表中的不一致，而查询时如果处在索引则首先查询索引）</p>
-<h4 id="14、前10条记录"><a href="#14、前10条记录" class="headerlink" title="14、前10条记录"></a>14、前10条记录</h4><pre><code>select top 10 * form table1 where 范围</code></pre><h4 id="15、选择在每一组b值相同的数据中对应的a最大的记录的所有信息-类似这样的用法可以用于论坛每月排行榜-每月热销产品分析-按科目成绩排名-等等"><a href="#15、选择在每一组b值相同的数据中对应的a最大的记录的所有信息-类似这样的用法可以用于论坛每月排行榜-每月热销产品分析-按科目成绩排名-等等" class="headerlink" title="15、选择在每一组b值相同的数据中对应的a最大的记录的所有信息(类似这样的用法可以用于论坛每月排行榜,每月热销产品分析,按科目成绩排名,等等.)"></a>15、选择在每一组b值相同的数据中对应的a最大的记录的所有信息(类似这样的用法可以用于论坛每月排行榜,每月热销产品分析,按科目成绩排名,等等.)</h4><pre><code>select a,b,c from tablename ta where a=(select max(a) from tablename tb where tb.b=ta.b)</code></pre><h4 id="16、包括所有在-TableA-中但不在-TableB和TableC-中的行并消除所有重复行而派生出一个结果表"><a href="#16、包括所有在-TableA-中但不在-TableB和TableC-中的行并消除所有重复行而派生出一个结果表" class="headerlink" title="16、包括所有在 TableA 中但不在 TableB和TableC 中的行并消除所有重复行而派生出一个结果表"></a>16、包括所有在 TableA 中但不在 TableB和TableC 中的行并消除所有重复行而派生出一个结果表</h4><pre><code>(select a from tableA ) except (select a from tableB) except (select a from tableC)</code></pre><h4 id="17、随机取出10条数据"><a href="#17、随机取出10条数据" class="headerlink" title="17、随机取出10条数据"></a>17、随机取出10条数据</h4><pre><code>select top 10 * from tablename order by newid()</code></pre><h4 id="18、随机选择记录"><a href="#18、随机选择记录" class="headerlink" title="18、随机选择记录"></a>18、随机选择记录</h4><pre><code>select newid()</code></pre><h4 id="19、删除重复记录"><a href="#19、删除重复记录" class="headerlink" title="19、删除重复记录"></a>19、删除重复记录</h4><pre><code>1),delete from tablename where id not in (select max(id) from tablename group by col1,col2,...)
-2),select distinct * into temp from tablename delete from tablename insert into tablename select * from temp
-评价： 这种操作牵连大量的数据的移动，这种做法不适合大容量但数据操作
-3),例如：在一个外部表中导入数据，由于某些原因第一次只导入了一部分，但很难判断具体位置，这样只有在下一次全部导入，这样也就产生好多重复的字段，怎样删除重复字段
-alter table tablename
---添加一个自增列
-add  column_b int identity(1,1)
- delete from tablename where column_b not in(
-select max(column_b)  from tablename group by column1,column2,...)
-alter table tablename drop column column_b</code></pre><h4 id="20、列出数据库里所有的表名"><a href="#20、列出数据库里所有的表名" class="headerlink" title="20、列出数据库里所有的表名"></a>20、列出数据库里所有的表名</h4><pre><code>select name from sysobjects where type=&#39;U&#39; // U代表用户</code></pre><h4 id="21、列出表里的所有的列名"><a href="#21、列出表里的所有的列名" class="headerlink" title="21、列出表里的所有的列名"></a>21、列出表里的所有的列名</h4><pre><code>select name from syscolumns where id=object_id(&#39;TableName&#39;)</code></pre><h4 id="22、列示type、vender、pcs字段，以type字段排列，case可以方便地实现多重选择，类似select-中的case。"><a href="#22、列示type、vender、pcs字段，以type字段排列，case可以方便地实现多重选择，类似select-中的case。" class="headerlink" title="22、列示type、vender、pcs字段，以type字段排列，case可以方便地实现多重选择，类似select 中的case。"></a>22、列示type、vender、pcs字段，以type字段排列，case可以方便地实现多重选择，类似select 中的case。</h4><pre><code>select type,sum(case vender when &#39;A&#39; then pcs else 0 end),sum(case vender when &#39;C&#39; then pcs else 0 end),sum(case vender when &#39;B&#39; then pcs else 0 end) FROM tablename group by type</code></pre><p>显示结果：<br>    type vender pcs<br>    电脑 A 1<br>    电脑 A 1<br>    光盘 B 2<br>    光盘 A 2<br>    手机 B 3<br>    手机 C 3</p>
-<h4 id="23、初始化表table1"><a href="#23、初始化表table1" class="headerlink" title="23、初始化表table1"></a>23、初始化表table1</h4><pre><code>TRUNCATE TABLE table1</code></pre><h4 id="24、选择从10到15的记录"><a href="#24、选择从10到15的记录" class="headerlink" title="24、选择从10到15的记录"></a>24、选择从10到15的记录</h4><pre><code>select top 5 * from (select top 15 * from table order by id asc) table_别名 order by id desc</code></pre>
+                <pre><code> 高质量图片网站</code></pre><pre><code> [网站一](https://magdeleine.co/)</code></pre><pre><code>[网站二](https://www.lifeofpix.com)</code></pre><pre><code>[网站三](https://unsplash.com)</code></pre>
             </div>
             <hr/>
 
@@ -660,8 +609,8 @@ alter table tablename drop column column_b</code></pre><h4 id="20、列出数据
                 </a>
             </div>
             <br/>
-            <a  href="/2019/10/31/mysql语句总结/">
-                    《mysql语句总结》
+            <a  href="/2019/10/31/高质量图片网站/">
+                    《高质量图片网站》
             </a> 由
             <a href="http://yoursite.com">
                 Hong yue
@@ -702,9 +651,10 @@ alter table tablename drop column column_b</code></pre><h4 id="20、列出数据
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/10/31/高质量图片网站/">
                     <div class="card-image">
@@ -722,9 +672,9 @@ alter table tablename drop column column_b</code></pre><h4 id="20、列出数据
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -733,6 +683,7 @@ alter table tablename drop column column_b</code></pre><h4 id="20、列出数据
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -751,28 +702,26 @@ alter table tablename drop column column_b</code></pre><h4 id="20、列出数据
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/16/Hexo/">
+                <a href="/2019/10/31/mysql语句总结/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Hexo安装教程">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mysql语句总结">
                         
-                        <span class="card-title">Hexo安装教程</span>
+                        <span class="card-title">mysql语句总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            安装hexo基础框架npm install hexo-cli -g
-更新内容我是用windows系统，打开cmd然后进入到你的博客文件目录，输入以下命令
-hexo clean
-hexo g
-hexo d网易云音乐外链https://musi
+                            ## mysql语句大全一、基础1、创建数据库：CREATE DATABASE 库名2、删除数据库：drop database 库名3、备份sql server--- 创建 备份数据的 device
+USE master
+EXEC sp_a
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-31
                             </span>
                         <span class="publish-author">
                             
@@ -785,8 +734,8 @@ hexo d网易云音乐外链https://musi
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Hexo-技术-Git/">
-                        <span class="chip bg-color">-Hexo -技术 -Git</span>
+                    <a href="/tags/mysql-概念-总结/">
+                        <span class="chip bg-color">-mysql -概念 -总结</span>
                     </a>
                     
                 </div>
